@@ -3,10 +3,11 @@ package com.mygdx.game.models.clases;
 import com.badlogic.gdx.utils.Disposable;
 import com.mygdx.game.models.interfaces.Weapon;
 
+import java.util.ArrayList;
+
 public class Arco implements Disposable, Weapon {
 
-    private int dmg = 20;
-
+  private ArrayList<Flecha> flechas;
 
 
 

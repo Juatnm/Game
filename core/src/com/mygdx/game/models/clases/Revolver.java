@@ -8,16 +8,16 @@ public class Revolver implements Weapon {
 
     private int balasCargador;
     private int balasTotal;
-    private final Sound SONIDO_DISPARO;
-    private final Sound SONIDO_RECARGA;
-    private final Sound SONIDO_SINBALAS;
+    private  Sound SONIDO_DISPARO;
+    private  Sound SONIDO_RECARGA;
+    private  Sound SONIDO_SINBALAS;
 
     public Revolver(int balasCargador) {
 
         this.balasCargador = Utils.CARGADOR_PISTOLA;
-        this.SONIDO_DISPARO = Utils.SDISPARO;
-        this.SONIDO_RECARGA = Utils.SRECARGA;
-        this.SONIDO_SINBALAS = Utils.SSINBALAS;
+       this.SONIDO_DISPARO = Utils.SDISPARO;
+       this.SONIDO_RECARGA = Utils.SRECARGA;
+       this.SONIDO_SINBALAS = Utils.SSINBALAS;
     }
 
     @Override
@@ -35,7 +35,7 @@ public class Revolver implements Weapon {
     @Override
     public void recargar() {
 // Lanzamos sonido de recarga
-        this.SONIDO_RECARGA.play();
+      this.SONIDO_RECARGA.play();
 // Ajustamos las balas
         if (balasTotal >=6){
             balasCargador = 6;
